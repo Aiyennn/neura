@@ -62,15 +62,23 @@ nav {
   color: #bbbbbb;
 }
 
-/* ------ Home -------- */
-
-#introduction {
+.linear-gradient {
   background: linear-gradient(to bottom, #141414 0%, #292a2b 52%, #2d7372 100%);
 }
 
-#services {
+.charcoal-background {
   background-image: url('./src/images/Gray-Background.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+/* ------ Home -------- */
+
+#introduction {
+
+}
+
+#services {
+
 }
