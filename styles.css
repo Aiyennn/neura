@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+section {
+  height: 100vh;
+}
+
+/* ------ Global ------ */
+
+header {
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: transparent;
+  z-index: 1000;
+}
+
+.logo {
+  color: #4ef0ca;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #bbbbbb;
+}
+
+/* ------ Home -------- */
+
+#introduction {
+  background: linear-gradient(to bottom, #141414 0%, #292a2b 52%, #2d7372 100%);
+}
+
+#services {
+  background-image: url('./src/images/Gray-Background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
