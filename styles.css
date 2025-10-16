@@ -17,6 +17,7 @@ body {
 
 section {
   height: 100vh;
+  padding: 5%;
 }
 
 /* ------ Global ------ */
@@ -38,6 +39,17 @@ nav {
   background: transparent;
   z-index: 1000;
 }
+
+footer {
+  background-color: #191919;
+  min-height: 10vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* End of Global Ahhhhh */
 
 .logo {
   color: #4ef0ca;
@@ -76,9 +88,111 @@ nav {
 /* ------ Home -------- */
 
 #introduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+  gap: 10%;
+}
 
+#banner img{
+  width: 50vh;
+  height: 50vh;
+  border-radius: 15px;
+}
+
+#welcome {
+  width: 40%;
+  border-left: 3px solid #00FFEA;
+  padding-left: 5%;
+  
+}
+
+#welcome h1 {
+  color: #fff;
+  margin-bottom: 5%;
+  font-size: 3rem;
+}
+
+#welcome p {
+  color: #16FF92;
+  margin-bottom: 5%;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  font-weight: bold;
+}
+
+#welcome button {
+  background-color: #66FF99;
+  color: #000;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 7%
+}
+
+#welcome button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
 }
 
 #services {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+#services h2 {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 1%;
+}
+
+#services p {
+  color: #00FFEA;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+#service-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 75vh;
+  margin: 0 auto;
+  gap: 2%;
+}
+
+.service-card {
+  flex: 1;
+  height: 100%;
+  background-color: #222;
+  border-radius: 15px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.service-card h1 {
+  margin-bottom: 5%;
+}
+
+.service-card img {
+  width: 65%;
+  max-height: 80%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
