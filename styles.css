@@ -79,7 +79,7 @@ footer {
 }
 
 .charcoal-background {
-  background-image: url('./src/images/Gray-Background.png');
+  background-image: url("./src/images/Gray-Background.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -95,7 +95,7 @@ footer {
   gap: 10%;
 }
 
-#banner img{
+#banner img {
   width: 50vh;
   height: 50vh;
   border-radius: 15px;
@@ -103,9 +103,8 @@ footer {
 
 #welcome {
   width: 40%;
-  border-left: 3px solid #00FFEA;
+  border-left: 3px solid #00ffea;
   padding-left: 5%;
-  
 }
 
 #welcome h1 {
@@ -115,7 +114,7 @@ footer {
 }
 
 #welcome p {
-  color: #16FF92;
+  color: #16ff92;
   margin-bottom: 5%;
   font-size: 1.4rem;
   line-height: 1.6;
@@ -123,7 +122,7 @@ footer {
 }
 
 #welcome button {
-  background-color: #66FF99;
+  background-color: #66ff99;
   color: #000;
   font-weight: bold;
   font-size: 1rem;
@@ -133,7 +132,7 @@ footer {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
   cursor: pointer;
   transition: all 0.2s ease;
-  margin-top: 7%
+  margin-top: 7%;
 }
 
 #welcome button:hover {
@@ -150,12 +149,12 @@ footer {
 
 #services h2 {
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 1%;
 }
 
 #services p {
-  color: #00FFEA;
+  color: #00ffea;
   font-size: 1.3rem;
   line-height: 1.6;
   text-align: center;
@@ -175,7 +174,8 @@ footer {
 .service-card {
   flex: 1;
   height: 100%;
-  background-color: #222;
+  background-image: url("./src/images/card-background-dark.png");
+  background-size: cover;
   border-radius: 15px;
   color: white;
   display: flex;
@@ -186,13 +186,128 @@ footer {
 }
 
 .service-card h1 {
-  margin-bottom: 5%;
+  font-size: 1rem;
 }
 
 .service-card img {
-  width: 65%;
-  max-height: 80%;
-  object-fit: contain;
-  border-radius: 10px;
+  width: 60%;
+  max-height: 70%;
+  margin-top: 5%;
+  border-radius: 15px;
 }
 
+/* End of Home */
+
+/* Pricing */
+
+#pricing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#pricing h1 {
+  color: #fff;
+  margin-bottom: 3%;
+}
+
+#pricing img {
+  height: 70vh;
+  border-radius: 15px;
+}
+
+#pricing p {
+  color: #fff;
+}
+
+#plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#plan h1 {
+  margin-bottom: 5%;
+  color: #fff;
+  font-size: 2rem;
+}
+
+#plan-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 70vh;
+  margin: 0 auto;
+  gap: 2%;
+}
+
+.plan-card {
+  flex: 1;
+  height: 100%;
+  background-image: url("./src/images/card-background.png");
+  background-size: cover;
+  border-radius: 15px;
+  border: solid #104c4a 1px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.plan-card button {
+  background-color: #66ff99;
+  color: #000;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 5%;
+}
+
+.plan-card button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+}
+
+.plan-card img {
+  width: 15%;
+  height: auto;
+}
+
+.plan-card h2 {
+  margin-top: 5%;
+  font-size: 1.7rem;
+}
+
+.plan-card p {
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+.plan-card h3 {
+  margin-top: 15%;
+}
+
+.month {
+  margin-bottom: 15%;
+}
+
+.price {
+  font-size: 2.5rem;
+  font-weight: 100;
+}
+
+.main {
+  font-weight: bold;
+  font-size: 3rem;
+  color: #5DA9E9;
+}
