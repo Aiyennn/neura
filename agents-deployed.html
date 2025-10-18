@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/mobile.css" media="(max-width: 680px)">
     <title>Agents Deployed | Neura</title>
 </head>
 
@@ -13,7 +14,10 @@
     <header>
         <nav>
             <div class="logo">NEURA</div>
-            <ul class="nav-links">
+            <div class="menu-toggle" id="menu-toggle">
+                ☰
+            </div>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="pricing.html">Pricing</a></li>
                 <li><a href="home.html">About</a></li>
                 <li><a href="agents-deployed.html">Agents Deployed</a></li>
@@ -21,13 +25,27 @@
         </nav>
     </header>
 
-    <section id="introduction" class="linear-gradient">
+    <section id="ai-introduction" class="linear-gradient">
+        <div id="ai-image-card">
+            <img src="./src/images/ai-hand.png" alt="AI Hand Illustration">
+        </div>
+        <div class="content">
+            <div id="custom-ai-agents">
+                <img src="src/images/Artificial-Intelligence.png" alt="">
+                <h2>Custom AI Agents</h2>
+            </div>
+            <p>Here in <span style="color:#00ffea;font-weight:bold;">NEURA</span> we provide tailored AI Agents based on
+                your business. If you have no specific implementation in mind, we offer a free consultation, or you can
+                choose one of our pre-built AI Agents.</p>
+            <div class="scroll">SCROLL DOWN</div>
+        </div>
     </section>
 
     <section class="charcoal-background agent">
 
         <div class="ai-agent-container">
-            <div id="aurora-side-color"></div>
+            <div id="aurora-side-color">
+            </div>
             <img src="/src/images/aurora.png" alt="">
         </div>
 
@@ -35,7 +53,9 @@
             <h1>Aurora</h1>
             <div class="text2-container aurora">
                 <p>Provides advanced analytics for retail environments, offering insights into customer behavior that
-                    increases sales up by up to 15% and improve customer retention by 20%</p>
+                    increases sales up by up to <span class="aurora-number">15%</span> and improve customer retention by
+                    <span class="aurora-number">20%</span>
+                </p>
             </div>
         </div>
 
@@ -50,8 +70,12 @@
             <h1>Sentinel</h1>
             <div class="text2-container sentinel">
                 <p>Specialized in security, provides broad visibility across native and third-party data, analyzing over
-                    500,000+ threat signals per second and reducing false positives by up to 40%, ensuring faster, more
-                    accurate threat response.</p>
+                    <span class="sentinel-number">500,000+</span>
+                    threat signals per second and reducing false positives by up to <span
+                        class="sentinel-number">40%</span>
+                    , ensuring faster, more
+                    accurate threat response.
+                </p>
             </div>
         </div>
     </section>
@@ -64,8 +88,9 @@
         <div class="text-container">
             <h1>Helix</h1>
             <div class="text2-container helix">
-                <p>Specialized in customer service, delivering insights that cut resolution time by 34%, improving
-                    customer satisfaction by 47%.</p>
+                <p>Specialized in customer service, delivering insights that cut resolution time by <span
+                        class="helix-number">34%</span>, improving
+                    customer satisfaction by <span class="helix-number">47%</span>.</p>
             </div>
         </div>
     </section>
@@ -73,6 +98,8 @@
     <footer>
         <h3>Copyright ©2025; Designed by Kline Calaguas</h3>
     </footer>
+
+    <script src="./src/navbar.js"></script>
 </body>
 
 </html>

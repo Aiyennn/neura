@@ -1,0 +1,383 @@
+@media (max-width: 680px) {
+  footer h3 {
+    font-size: 0.8rem;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #111;
+    flex-direction: column;
+    width: 200px;
+    text-align: right;
+    padding: 20px;
+    display: none;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  #introduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    padding: 10%;
+    gap: 10%;
+  }
+
+  #welcome {
+    text-align: center;
+  }
+
+  #welcome p {
+    color: #fff;
+    margin-bottom: 5%;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  #welcome h1 {
+    color: #fff;
+    font-size: 1.8rem;
+  }
+
+  #welcome {
+    width: 100%;
+    border-left: none;
+    padding-left: 5%;
+  }
+
+  #banner img {
+    width: 30vh;
+    height: 30vh;
+    border-radius: 15px;
+  }
+
+  .arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #66ff99;
+  }
+
+  #services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #services h2 {
+    color: #fff;
+    font-size: 1.6rem;
+    margin-bottom: 1%;
+  }
+
+  #services p {
+    color: #d2d2d2ff;
+    font-size: 1rem;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 3%;
+  }
+
+  /* Carousel */
+
+  #services,
+  .plan-container {
+    position: relative;
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
+  #service-container {
+    display: flex;
+    gap: 30px;
+    margin: 0 auto;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .service-card {
+    background: linear-gradient(135deg, #4a9d9c 0%, #3d7b7a 100%);
+    border-radius: 20px;
+    min-width: 300px;
+    height: 370px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  }
+
+  .service-card.center {
+    transform: scale(1.1);
+    z-index: 2;
+    box-shadow: 0 15px 50px rgba(74, 157, 156, 0.5);
+  }
+
+  .service-card.side {
+    filter: blur(2px);
+    opacity: 0.8;
+  }
+
+  .service-card h1 {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .service-card img {
+    height: auto;
+    object-fit: contain;
+  }
+
+  #prev,
+  #next {
+    position: absolute;
+    transform: translateY(-50%);
+    background-color: rgba(74, 157, 156, 0.8);
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #prev:hover,
+  #next:hover {
+    background-color: rgba(74, 157, 156, 1);
+  }
+
+  #prev {
+    display: block;
+    left: 20px;
+  }
+
+  #next {
+    display: block;
+    right: 20px;
+  }
+
+  /* Pricing ------------------------------------------------ */
+  #plan,
+  .plan-container {
+    position: relative;
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+  #pricing img {
+    max-width: 80%;
+    height: 50vh;
+    margin-bottom: 10%;
+  }
+
+  #pricing h1,
+  #plan h1,
+  #comparison h1,
+  #questions h1 {
+    font-size: 1.5rem;
+  }
+
+  #comparison {
+    display: none;
+  }
+
+  #plan-card {
+    display: flex;
+    gap: 30px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+
+  #plan-container {
+    transition: transform 0.5s ease-in-out;
+
+  }
+
+  .plan-card {
+    background-image: url("../src/images/card-background.png");
+    border-radius: 20px;
+    min-width: 250px;
+    height: 370px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+
+  .plan-card h2 {
+    font-size: 1.3rem;
+  }
+
+  .plan-card p {
+    font-size: 1rem;
+  }
+
+  .main {
+    font-size: 2rem;
+  }
+
+  .cents {
+    font-size: 1.5rem;
+  }
+
+  .plan-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  }
+
+  .plan-card.center {
+    transform: scale(1.1);
+    z-index: 2;
+    box-shadow: 0 15px 50px rgba(74, 157, 156, 0.5);
+  }
+
+  .plan-card.side {
+    filter: blur(2px);
+    opacity: 0.8;
+  }
+
+  .plan-card h1 {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .plan-card img {
+    height: auto;
+    object-fit: contain;
+  }
+
+  #prev,
+  #next {
+    position: absolute;
+    transform: translateY(-50%);
+    background-color: rgba(74, 157, 156, 0.8);
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #prev:hover,
+  #next:hover {
+    background-color: rgba(74, 157, 156, 1);
+  }
+
+  #questions form {
+    width: 100%;
+  }
+
+  /* Custom AI Agents ------------------------------ */
+
+  #ai-introduction {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #custom-ai-agents {
+    display: flex;
+    justify-content: center;
+  }
+
+  #custom-ai-agents h2 {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  .content {
+    text-align: center;
+  }
+
+  .content p {
+    border: none;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0;
+  }
+
+  .ai-agent-container {
+    width: 80%;
+    height: 40%;
+  }
+
+  #ai-image-card {
+    width: 30vh;
+    height: 60vh;
+  }
+
+  #custom-ai-agents img {
+    display: none;
+  }
+
+  /*  */
+
+  .agent {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ai-agent-container {
+    width: 50%;
+    height: 50%;
+  }
+
+  .ai-agent-container img {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  #sentinel-side-color,
+  #helix-side-color,
+  #aurora-side-color {
+    height: 100%;
+  }
+
+  .text-container {
+    width: 100%;
+  }
+
+  .text-container h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 5%;
+  }
+
+  .text2-container {
+    width: 100%;
+  }
+
+  .text2-container p {
+    width: 100%;
+    margin: 0;
+    font-size: 1rem;
+  }
+}

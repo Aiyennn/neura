@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/mobile.css" media="(max-width: 680px)">
     <title>Pricing | Neura</title>
 </head>
 
@@ -13,7 +14,10 @@
     <header>
         <nav>
             <div class="logo">NEURA</div>
-            <ul class="nav-links">
+            <div class="menu-toggle" id="menu-toggle">
+                ☰
+            </div>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="pricing.html">Pricing</a></li>
                 <li><a href="home.html">About</a></li>
                 <li><a href="agents-deployed.html">Agents Deployed</a></li>
@@ -72,17 +76,69 @@
                 <p>More info</p>
                 <button>Get Started</button>
             </div>
+
         </div>
 
+        <button id="prev">&#10094;</button>
+        <button id="next">&#10095;</button>
     </section>
+
+    <!-- Comparison --------------------------------------- -->
+
+
     <section id="comparison" class="charcoal-background">
+        <h1>Comparison</h1>
+        <table>
+            <tr>
+                <th>PLAN</th>
+                <th>INTERACTIVE DASHBOARD</th>
+                <th>DATA SOURCE</th>
+                <th>REPORTS & EXPORTS</th>
+                <th>ADVANCE INSIGHTS</th>
+            </tr>
+            <tr>
+                <td>STARTER</td>
+                <td class="check">&#10003;</td>
+                <td class="cross">&#10007;</td>
+                <td class="cross">&#10007;</td>
+                <td class="cross">&#10007;</td>
+            </tr>
+            <tr>
+                <td>PRO</td>
+                <td class="check">&#10003;</td>
+                <td class="cross">&#10007;</td>
+                <td class="check">&#10003;</td>
+                <td class="cross">&#10007;</td>
+            </tr>
+            <tr>
+                <td>ENTERPRISE</td>
+                <td class="check">&#10003;</td>
+                <td class="check">&#10003;</td>
+                <td class="check">&#10003;</td>
+                <td class="check">&#10003;</td>
+            </tr>
+        </table>
     </section>
+
+    <!-- Questions -->
+
     <section id="questions" class="charcoal-background">
+        <h1>Questions</h1>
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="tel" placeholder="Contact Number" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message..." required></textarea>
+            <button>Submit</button>
+        </form>
     </section>
 
     <footer>
         <h3>Copyright ©2025; Designed by Kline Calaguas</h3>
     </footer>
+
+    <script src="./src/navbar.js"></script>
+    <script src="./src/pricingCarousel.js"></script>
 </body>
 
 </html>
