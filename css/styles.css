@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 html,
 body {
   height: 100%;
@@ -38,6 +43,29 @@ nav {
   padding: 20px 60px;
   background: transparent;
   z-index: 1000;
+}
+
+.nav-links li a {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    padding: 5px 0;
+}
+
+.nav-links li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background-color: #4ef0ca;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
 }
 
 /* Hamburger icon */
@@ -226,13 +254,15 @@ footer {
 
 #pricing h1 {
   color: #fff;
-  margin-bottom: 3%;
 }
 
 #pricing img {
   height: 70vh;
+  max-width: 900px;
   width: 80%;
   border-radius: 15px;
+  margin-top: 3%;
+  margin-bottom: 3%;
 }
 
 #pricing p {
@@ -364,6 +394,10 @@ footer {
   color: #fff;
   font-size: 2.5rem;
   padding-top: 5%;
+}
+
+.content div {
+  margin-top: 10%;
 }
 
 .content p {
